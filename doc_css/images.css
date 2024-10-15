@@ -1,0 +1,102 @@
+header {
+  background-image: url(../img/img/planches.jpg);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #e1e1e1;
+} /* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+}
+.logo img {
+  max-width: 100px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links li {
+  margin-left: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+} /* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #f4f4f4;
+}
+.hero-content img {
+  max-width: 150px;
+} /* Story Section */
+.story {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #fff;
+}
+.story-content .text {
+  width: 50%;
+}
+.story-content img {
+  width: 40%;
+  height: auto;
+} /* Fresh Fare Section */
+.fresh-fare {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+.fresh-fare-content .text {
+  width: 40%;
+}
+.fresh-fare-content img {
+  width: 50%;
+  height: auto;
+} /* Local Distillation Section */
+.local-distillation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #fff;
+}
+.local-distillation-content .text {
+  width: 50%;
+}
+.local-distillation-content img {
+  width: 40%;
+  height: auto;
+} /* Footer */
+footer {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 20px 0;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.social-icons a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}

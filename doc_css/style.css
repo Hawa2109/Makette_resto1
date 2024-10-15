@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Arial", sans-serif;
+  background-image: url(../img/img/motif.jpg);
+}
+header {
+  background-image: url(../img/img/planches.jpg);
+}
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #121010;
+  text-transform: uppercase;
+}
+h1 span {
+  /* pour la couleur de soir */
+  color: #000;
+}
+
+/* pour la ligne sous le texte */
+sup {
+  margin: 5px auto 0;
+  text-decoration: underline red;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 10px;
+  margin-top: -60px; /* margin-top avec une valeur negative pour remonter la barre de navigation */
+}
+
+
+/* .logo-triangle {
+  position: relative;
+  display: inline-block;
+} */
+.logo {
+  max-width: 150px; /* Ajuste la taille du logo */
+  /* position: relative; */
+  margin-left: 50%;
+  /* z-index: 1; */
+}
+/* pour mettre le triangle */
+/* .Triangle {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent; /* ajouter selon la taille */
+/* border-right: 40px solid transparent; /* ajouter selon la taille */
+/* border-bottom: 95px solid purple; /* la couleur rose du triangle */
+/* margin-left: 50%;
+  z-index: -1;
+}   */
+
+/* Navigation */
+.navigation {
+  list-style: none;
+  position: absolute;
+  right: 20px; /* Positionne la liste des liens à droite */
+}
+.navigation li {
+  margin-left: 20px;
+}
+.navigation a {
+  text-decoration: none;
+  color: #141414;
+  font-weight: bold;
+}
+/* LA PARTIE DES SECTIONS */
+/* la section our_story */
+.Our_story {
+  display: flex;
+  flex-direction: column; 
+  /* align-items: center;  centrer le H2 et le contenu */
+}
+
+/* pour le h2 */
+.Our_story h2 {
+  /* margin-bottom: 20px; */
+}
+
+.block1 {
+  display: flex; /* pour aligner les éléments côte à côte  */
+  align-items: center; /* pour center l'image et le texte verticalement */
+  justify-content: space-between; /* pour ajouter de l'espace entre le texte et l'image */
+}
+/* Pour le paragraphe de la section Our_story */
+.Our_story p {
+  flex: 1; /* pour que le texte prenne l'espace disponible */
+  max-width: 50%;
+  /* margin-right: 20px; ajouter la marge droite pour ajouter de l'espace entre le p et l'image */
+  margin-left: 30px; /* ajouter la marge gauche pour ajouter de l'espace du côter gauche */
+  background-image: url(../img/img/motif.jpg); /* image de font pour le p */
+}
+.Our_story img {
+  width: 45%; /* limiter la taille de l'image */
+  height: auto; /* pour garder la hauteur correcte de l'image */
+  margin-top: -29px;
+}
+
+/* la section fair */
+.Fair h2 {
+  top: 10%;
+  position: absolute;
+  right: 50px;
+  text-align: right;
+}
+.Fair {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.Fair .savon {
+  max-width: 500px;
+}
+.Para_Img img {
+  width: 200px;
+}
+.Fair .Para_Img {
+  flex-direction: column;
+}
+.Fair p {
+  flex: 1;
+  margin-left: 30px;
+  background-image: url(../img/img/motif.jpg);
+  width: 70%;
+  height: 70%;
+}
+/* L'IMAGE DE LA DIV APRES LES SECTIONS */
+.oeuf_img{
+  width: 100%; 
+}
