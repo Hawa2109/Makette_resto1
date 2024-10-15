@@ -24,7 +24,7 @@ sup {
 }
 body {
   font-family: "Arial", sans-serif;
-  background-color: #e1e1e1;
+  background-image: url(../img/img/motif.jpg);
 }
 /* Navigation */
 nav ul {
@@ -98,13 +98,12 @@ nav ul {
 /* Pour le paragraphe de la section Our_story */
 .Our_story p {
   flex: 1; /* pour que le texte prenne l'espace disponible */
-  max-width: 50%;
+  max-width: 20%;
   /* margin-right: 20px; ajouter la marge droite pour ajouter de l'espace entre le p et l'image */
   margin-left: 30px; /* ajouter la marge gauche pour ajouter de l'espace du côter gauche */
-  background-image: url(../img/img/motif.jpg); /* image de font pour le p */
 }
 .Our_story img {
-  max-width: 50%; /* limiter la taille de l'image */
+  max-width: 80%; /* limiter la taille de l'image */
   height: auto; /* pour garder la hauteur correcte de l'image */
   margin-top: -29px;
 }
@@ -134,7 +133,13 @@ nav ul {
 .Fair p {
   flex: 1;
   margin-left: 30px;
-  background-image: url(../img/img/motif.jpg);
   width: 70%;
   height: 70%;
 }
+.Drink{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
