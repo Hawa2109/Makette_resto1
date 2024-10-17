@@ -1,7 +1,7 @@
 * {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  /* padding: 0;
+  box-sizing: border-box; */
 }
 header {
   background-image: url(../img/img/planches.jpg);
@@ -20,8 +20,10 @@ h1 span {
 /* pour la ligne sous le texte */
 sup {
   margin: 5px auto 0;
-  text-decoration: underline red;
+   text-decoration: underline red; 
+
 }
+
 body {
   font-family: "Arial", sans-serif;
   background-image: url(../img/img/motif.jpg);
@@ -50,18 +52,21 @@ nav ul {
   /* z-index: 1; */
 }
 /* pour mettre le triangle */
-/* .Triangle {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 40px solid transparent; /* ajouter selon la taille */
-/* border-right: 40px solid transparent; /* ajouter selon la taille */
-/* border-bottom: 95px solid purple; /* la couleur rose du triangle */
-/* margin-left: 50%;
-  z-index: -1;
-}   */
+ .logo-triangle::before {
+  content: "";
+  position: absolute;
+  margin-left: 720px;
+  left: 30px;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 0, 102, 0.7);
+  clip-path: polygon(
+    100% 10%,
+    0% 10%,
+    100% 100%
+  ); /* pour la couleur rose transparent */
+  /* z-index: -1; /* pour mettre le triangle à l'arriére */
+} 
 
 /* Navigation */
 .navigation {
@@ -86,8 +91,9 @@ nav ul {
 }
 
 /* pour le h2 */
-.Our_story h2 {
+section.Our_story  h2 {
   /* margin-bottom: 20px; */
+  margin-left: 45px;
 }
 
 .block1 {
@@ -136,11 +142,23 @@ nav ul {
   width: 70%;
   height: 70%;
 }
-.Drink{
+/* la partie drink */
+ .Drink{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; 
 
+}
+.Drink p {
+  flex: 1;
+  margin-left: 30px;
+  width: 70%;
+  height: 70%;
+}
+.moule{
+  /* display: flex; */
+   /* flex-direction: column;
+   width: 200px; */
 }
 .oeuf{
   width: 100%;
