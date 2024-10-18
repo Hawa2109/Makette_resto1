@@ -163,7 +163,25 @@ section.Our_story  h2 {
 .oeuf{
   width: 100%;
 }
+/* la partie footer */
+footer{
+   margin-left: 50px;
+}
 
+div.Icone {
+   
+  display: flex;
+    /* align-content: stretch; */
+    justify-content: flex-end;
+
+}
+div i {
+  padding: 20px 10px;
+}
+.titre{
+ margin-left: 20px;
+ text-decoration: 5px underline red;
+}
 
 
 
